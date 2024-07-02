@@ -1,0 +1,13 @@
+{
+  "input_email": "#email",
+  "input_password": "#password",
+  "btn_login": "#login",
+  "msg_alert": "[class='MuiAlert-message css-1xsto0d']",
+  "email_invalid": "[class='css-18xtib3']",
+  "msg_valid_email": "[class='css-18xtib3']",
+  "msg_valid_password": "[class='css-18xtib3']",
+  "forget_password": "[class='css-rpkgv3']",
+  "first_access": "[class='css-teqmh5']",
+  "access_here": "[class='css-c3vxn9']"
+
+}
