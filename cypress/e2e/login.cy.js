@@ -5,7 +5,7 @@ beforeEach(() => {
 });
 
 describe('Login', () => {
-    it.only('CT001 - Login com sucesso', () => {
+    it('CT001 - Login com sucesso', () => {
         const email = Cypress.env('EMAIL');
         const password = Cypress.env('PASSWORD');
         cy.login(email, password);
@@ -31,7 +31,7 @@ describe('Login', () => {
         cy.get(element.msg_valid_email).should('have.text', 'O email é obrigatório');
     });
 
-    it.only('CT005 - Login com e-mail válido e senha em branco', () => {
+    it('CT005 - Login com e-mail válido e senha em branco', () => {
         cy.get(element.input_email).type(Cypress.env('EMAIL'));
         cy.contains('Entrar').click();
         cy.contains('p', 'A senha é obrigatória').should('be.visible');
